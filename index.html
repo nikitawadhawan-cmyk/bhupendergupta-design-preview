@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bhupender Gupta Website Designs</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+  body { margin: 0; }
+  /* Layout: a short title block, then the two options as large photo cards, option 1 first. */
+  :root {
+    --bg: #faf8f5;
+    --fg: #1d1a17;
+    --muted: #6f675f;
+    --line: #e3ddd4;
+    --card: #ffffff;
+    --accent: #8a5a2b;
+    --display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --body: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #161412; --fg: #f1ece6; --muted: #a99f95; --line: #2f2a26; --card: #1f1c19; --accent: #d9a46b; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #161412; --fg: #f1ece6; --muted: #a99f95; --line: #2f2a26; --card: #1f1c19; --accent: #d9a46b; color-scheme: dark; }
+
+  body { background: var(--bg); color: var(--fg); font: 400 16px/1.6 var(--body); }
+  .page { max-width: 1180px; margin: 0 auto; padding-block: 56px 72px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .eyebrow { font: 600 12px/1.4 var(--body); letter-spacing: .24em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
+  h1 { font: 600 clamp(38px, 6vw, 64px)/1.05 var(--display); margin: 0; text-wrap: balance; }
+  .intro { max-width: 62ch; color: var(--muted); font-size: 17px; margin: 18px 0 0; }
+  .options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 44px; }
+  .option { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .25s ease, box-shadow .25s ease; }
+  .option:hover, .option:focus-visible { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(0,0,0,.12); }
+  .option:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .shot { position: relative; aspect-ratio: 16 / 10; max-width: 100%; overflow: hidden; background: #2a2622; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .shot .label { position: absolute; left: 20px; bottom: 18px; right: 20px; color: #fff; }
+  .shot .label span { display: block; font: 600 12px var(--body); letter-spacing: .22em; text-transform: uppercase; opacity: .85; }
+  .shot .label strong { display: block; font: 600 clamp(30px, 3.4vw, 40px)/1.1 var(--display); margin-top: 4px; }
+  .shot::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,.65), rgba(0,0,0,0) 55%); }
+  .shot .label { z-index: 1; }
+  .opt2 .shot::after { background: linear-gradient(90deg, rgba(10,9,8,.75), rgba(10,9,8,.1) 70%); }
+  .body { padding: 22px 24px 26px; display: grid; gap: 14px; flex: 1; align-content: start; }
+  .body p { margin: 0; color: var(--muted); }
+  .traits { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .traits li { font-size: 13px; padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; }
+  .go { margin-top: 6px; font-weight: 600; color: var(--fg); }
+  .go::after { content: " →"; color: var(--accent); }
+  .notes { margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; border-top: 1px solid var(--line); padding-top: 28px; }
+  .notes h2 { font: 600 24px/1.2 var(--display); margin: 0 0 6px; }
+  .notes p { margin: 0; color: var(--muted); font-size: 15px; }
+  @media (max-width: 760px) {
+    .page { padding-block: 36px 56px; }
+    .options, .notes { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (prefers-reduced-motion: reduce) { .option { transition: none; } .option:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <p class="eyebrow">bhupendergupta.com · New website · Design proposal</p>
+  <h1>Two design options</h1>
+  <p class="intro">Both options have the same 64 stories, the same 1,913 photographs and the same simple writing desk for Mr. Gupta. Only the look is different. Open each option, click around, and tell us which one you prefer.</p>
+
+  <div class="options">
+    <a class="option opt1" href="option-1/home.html">
+      <div class="shot">
+        <img src="photos/large/2023/04/N85_2825-1.jpg" alt="Elephant with its newborn, Masai Mara" width="2000" height="1338">
+        <div class="label"><span>Design option 1</span><strong>Classic</strong></div>
+      </div>
+      <div class="body">
+        <p>Clean and white, close to the current site but simpler. Calm serif headings, generous photos, and every story grouped by country on the home page.</p>
+        <ul class="traits"><li>Light and airy</li><li>Close to today’s site</li><li>Easy to read</li></ul>
+        <span class="go">View design option 1</span>
+      </div>
+    </a>
+
+    <a class="option opt2" href="option-2/home.html">
+      <div class="shot">
+        <img src="photos/large/2023/03/N85_2106-1.jpg" alt="Lioness in anticipation, Masai Mara" width="2000" height="1333">
+        <div class="label"><span>Design option 2</span><strong>Journal</strong></div>
+      </div>
+      <div class="body">
+        <p>A darker, magazine-style look with a full-screen opening photo, handwritten notes, a featured latest story, and stories organised in tabs by country.</p>
+        <ul class="traits"><li>Bold and editorial</li><li>Handwritten touches</li><li>Dark accents</li></ul>
+        <span class="go">View design option 2</span>
+      </div>
+    </a>
+  </div>
+
+  <section class="notes" aria-label="About this preview">
+    <div><h2>What to look at</h2><p>The home page, a full story (Masai Mara, Part 4), Wild Life Safaris, the Photo Gallery, Writer’s Desk and Contact.</p></div>
+    <div><h2>A selection of pages</h2><p>The preview includes some of the pages. Links to other stories open a short note instead.</p></div>
+    <div><h2>Switch any time</h2><p>A small bar at the bottom of every page shows which option you are viewing and lets you switch to the other.</p></div>
+  </section>
+</main>
+</body>
+</html>
