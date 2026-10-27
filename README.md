@@ -1,4 +1,3 @@
-# bhupendergupta.com: design preview
+# bhupendergupta.com: preview
 
-A clickable preview of two design options for the new bhupendergupta.com.
-This is not the live website. Open the GitHub Pages link to view it.
+A clickable preview of the new bhupendergupta.com (design 2). Not the live website.
